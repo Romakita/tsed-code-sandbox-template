@@ -2,8 +2,8 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
-      "name": "Install Dependencies",
-      "command": "yarn install"
+      "name": "Install Ts.ED project",
+      "command": "npx --yes -p @tsed/cli tsed init . --features=swagger,testing,vitest,linter,lintstaged,prettier --arch=default --convention=conv_default --platform=express --package-manager=npm --skip-prompt ."
     }
   ],
 
@@ -11,7 +11,7 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "yarn start",
+      "command": "npm run start",
       "runAtStart": true,
       "preview": {
         "port": 8080
@@ -19,7 +19,7 @@
     },
     "install": {
       "name": "install dependencies",
-      "command": "yarn install"
+      "command": "npm run install"
     }
   }
 }
